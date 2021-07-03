@@ -1,17 +1,15 @@
 package io.github.akashiikun.ccgen.mixin;
 
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.feature.DripstoneClusterFeatureConfig;
 import net.minecraft.world.gen.feature.SmallDripstoneFeature;
 import net.minecraft.world.gen.feature.util.FeatureContext;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(SmallDripstoneFeature.class)
 public class MixinSmallDripstoneFeature {

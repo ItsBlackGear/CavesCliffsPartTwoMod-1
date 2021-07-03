@@ -20,6 +20,10 @@ versions of [Minecraft][minecraft] Java Edition.
 Thank you for considering contributing to CCGEN! Please see the
 [Contribution Guidelines][contributing].
 
+## Contributions
+
+Contributions can be seen on commits and on this repository collaborators.
+
 ## Security Vulnerabilities
 
 Please review the [Security Policy][security] on how to report security
@@ -38,3 +42,5 @@ Example is open-sourced software licenced under the [MIT][licence].
 [minecraft]: https://minecraft.net/
 [releases]: https://github.com/AkashiiKun/CavesCliffsPartTwoMod/releases
 [security]: .github/SECURITY.md
+
+legosteenjaap: Fix cave biome colors showing on surface 

@@ -1,21 +1,16 @@
 package io.github.akashiikun.ccgen;
 
+import io.github.akashiikun.ccgen.core.api.CaveLayer;
+import io.github.akashiikun.ccgen.core.api.WorldGen;
 import net.fabricmc.api.ModInitializer;
 
-import java.util.List;
-import java.util.Set;
+public class CavesCliffsGenerationMod implements ModInitializer {
+    public static final String MOD_ID = "ccgen";
 
-import org.objectweb.asm.tree.ClassNode;
-import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
-import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
+    @Override
+    public void onInitialize() {
+        CaveLayer.caveBiomeList();
 
-public class CavesCliffsGenerationMod implements ModInitializer{
-
-	public static final String modid = "ccgen";
-	
-	@Override
-	public void onInitialize() {
-		WorldGen.init();
-	}
-
+        WorldGen.init();
+    }
 }
