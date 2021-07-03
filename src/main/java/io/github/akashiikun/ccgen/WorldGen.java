@@ -15,7 +15,7 @@ import net.minecraft.world.gen.feature.ConfiguredFeatures;
 @SuppressWarnings("deprecation")
 public class WorldGen {
 
-	private static final String modid = CavesCliffsGenerationMod.modid;
+	private static final String modid = CavesCliffsGenerationMod.MOD_ID;
 	
 	
 	public static void init () {
