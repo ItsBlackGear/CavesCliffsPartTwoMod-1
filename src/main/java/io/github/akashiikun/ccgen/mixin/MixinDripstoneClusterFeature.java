@@ -20,7 +20,7 @@ public class MixinDripstoneClusterFeature {
 	 * @author Legosteenjaap
 	 */
 	
-	@Inject(method = "generate", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "generate(Lnet/minecraft/world/gen/feature/util/FeatureContext;)Z", at = @At("HEAD"), cancellable = true)
 	public void generate(FeatureContext<DripstoneClusterFeatureConfig> context, CallbackInfoReturnable<Boolean> cir) {
 		StructureWorldAccess world = context.getWorld();
 		BlockPos pos = context.getOrigin();

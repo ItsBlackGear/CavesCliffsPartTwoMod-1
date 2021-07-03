@@ -20,22 +20,6 @@ versions of [Minecraft][minecraft] Java Edition.
 Thank you for considering contributing to CCGEN! Please see the
 [Contribution Guidelines][contributing].
 
-## Contributions
-
-SuperCoder79: Original code of 3D Biomes (https://github.com/SuperCoder7979/cavegen)
-
-nyuppo: Fix with Cave Biomes replacing all caves with Dripstone and Lush Caves only.
-
-legosteenjaap: 
-Fix Cave Biome colors showing on surface and Mixins to client (https://github.com/AkashiiKun/CavesCliffsPartTwoMod/pull/3)
-Add Multinoisebiome Source for Cave Biomes
-
-Justsnoopy30:
-Fix feature gen and structures generating multiple times in the same place causing duplicate spawned entities and extra unnecessary server load during generation
-
-AkashiiKun:
-Replaced @Override to @Inject for mod compatibilities (MixinVanillaLayeredBiomeSource).
-
 ## Security Vulnerabilities
 
 Please review the [Security Policy][security] on how to report security
@@ -54,5 +38,3 @@ Example is open-sourced software licenced under the [MIT][licence].
 [minecraft]: https://minecraft.net/
 [releases]: https://github.com/AkashiiKun/CavesCliffsPartTwoMod/releases
 [security]: .github/SECURITY.md
-
-legosteenjaap: Fix cave biome colors showing on surface 

@@ -22,7 +22,7 @@ public class TreeFeatureMixin {
 	 * @author Legosteenjaap
 	 */
 	
-	@Inject(method = "generate", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "generate(Lnet/minecraft/world/StructureWorldAccess;Ljava/util/Random;Lnet/minecraft/util/math/BlockPos;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;Lnet/minecraft/world/gen/feature/TreeFeatureConfig;)Z", at = @At("HEAD"), cancellable = true)
 	private void generate(StructureWorldAccess world, Random random, BlockPos pos, BiConsumer<BlockPos, BlockState> trunkReplacer, BiConsumer<BlockPos, BlockState> foliageReplacer, TreeFeatureConfig config, CallbackInfoReturnable<Boolean> cir) {
 		if (world.getBlockState(pos).isOf(Blocks.WATER) || world.getBlockState(pos.up()).isOf(Blocks.WATER)) cir.setReturnValue(false);
 	}
