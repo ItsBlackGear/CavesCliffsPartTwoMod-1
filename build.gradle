@@ -28,7 +28,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 	//Sodium
-	modImplementation "me.jellysquid.mods:sodium-fabric:0.3.0"
+	//modImplementation "me.jellysquid.mods:sodium-fabric:0.3.0"
 	
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
